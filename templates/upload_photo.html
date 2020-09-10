@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>{{ entries.coffee }}</h1>
+
+<h2>Image Labels:</h2>
+
+{% for label in entries.image_labels %}
+
+<p>{{ label.description }}<br></p>
+
+{% endfor %}
+
+{% endblock %}
